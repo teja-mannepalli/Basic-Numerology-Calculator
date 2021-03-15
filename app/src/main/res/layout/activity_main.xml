@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:autofillHints="Your name"
+        android:hint="@string/your_name"
+        android:inputType="textPersonName"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="60dp"
+        android:text="DOB" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/dob"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:text="Go!"
+        android:textSize="14sp" />
+</RelativeLayout>
